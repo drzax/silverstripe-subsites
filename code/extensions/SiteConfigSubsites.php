@@ -38,4 +38,8 @@ class SiteConfigSubsites extends DataExtension {
 	function cacheKeyComponent() {
 		return 'subsite-'.Subsite::currentSubsiteID();
 	}
+
+	function updateCMSFields(FieldList $fields) {
+		$fields->push(new HiddenField('SubsiteID','SubsiteID', Subsite::currentSubsiteID()));
+	}
 }
