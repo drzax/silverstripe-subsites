@@ -15,5 +15,6 @@ Object::add_extension('File', 'FileSubsites');
 Object::add_extension('ErrorPage', 'ErrorPageSubsite');
 Object::add_extension('SiteConfig', 'SiteConfigSubsites');
 
+Object::add_extension('CMSPageAddController', 'CMSPageAddControllerExtension');
 
 SS_Report::add_excluded_reports('SubsiteReportWrapper');
